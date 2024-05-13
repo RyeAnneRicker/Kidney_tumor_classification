@@ -1,3 +1,16 @@
 This folder contains the image processing code used in MATLAB and the machine learning/statistical anlysis code written in Python. 
 
+To run the features extraction codes in python you will need to run the feature_extraction_prcc.m file. Within it, it will call the scripts
+to extract the texture features, graylevel cooccurence features, and Graylevel Runlength features. So, you will also need to download the:
+1) Texture Features codes: GLCM_Features1.m, findmaxnum.m, rle_0.m, rle_45.m, zigzag.m, chip_histogram_features.m
+2) Gray Level Co-occurence files: GetCLCProps.m
+3) Gray Level Run Length files: grayrlmatrix.m, grayrlprops.m
+
+After the features are extracted, python files are used to check the normality of the features, perform a Mann Whitney U test, and do the 
+machine learning. These files include:
+1) NormalityTest.ipynb
+2) Mann Whitney Non-Parametric Test.ipynb
+3) prcc classification new.ipynb
+4) HGB Classifier Confusion Matrix.ipynb
+
   
